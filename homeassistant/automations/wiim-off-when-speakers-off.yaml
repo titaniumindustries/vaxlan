@@ -1,0 +1,29 @@
+# WiiM Off When Porch Speakers Turn Off
+# Added: 2026-04-14
+#
+# If the porch speakers (Kasa plug) turn off and the WiiM Mini is still
+# on (not "off"/"unavailable"), turn off the WiiM to avoid it playing
+# to unpowered speakers.
+#
+# Entities:
+#   switch.porch_speakers  — Kasa EP10 smart plug (10.0.40.31, VLAN 40)
+#   media_player.porch_wiim — WiiM Mini (LinkPlay, 10.0.40.70, VLAN 40)
+
+- id: 'wiim_off_when_speakers_off'
+  alias: WiiM - Off When Porch Speakers Turn Off
+  description: Turn off WiiM Mini when the porch speaker plug turns off, if WiiM is still on
+  triggers:
+  - entity_id: switch.porch_speakers
+    trigger: state
+    to: 'off'
+  conditions:
+  - condition: not
+    conditions:
+    - condition: state
+      entity_id: media_player.porch_wiim
+      state: 'off'
+  actions:
+  - action: media_player.turn_off
+    target:
+      entity_id: media_player.porch_wiim
+  mode: single

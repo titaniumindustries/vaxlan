@@ -1,0 +1,26 @@
+# Porch Speakers — Morning Wake
+# Added: 2026-04-14
+#
+# Turns on the porch speakers every day at 8:00 AM, then turns them off
+# 1 minute later. This is a brief daily power cycle (e.g., to trigger
+# a connected audio device's startup routine).
+#
+# Entities:
+#   switch.porch_speakers — Kasa EP10 smart plug (10.0.40.31, VLAN 40)
+
+- id: 'porch_speakers_morning_wake'
+  alias: Porch Speakers - Morning Wake (8 AM)
+  description: Turn on porch speakers at 8 AM, turn off 1 minute later
+  triggers:
+  - trigger: time
+    at: '08:00:00'
+  conditions: []
+  actions:
+  - action: switch.turn_on
+    target:
+      entity_id: switch.porch_speakers
+  - delay: '00:01:00'
+  - action: switch.turn_off
+    target:
+      entity_id: switch.porch_speakers
+  mode: single

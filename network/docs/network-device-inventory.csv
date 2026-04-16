@@ -1,0 +1,76 @@
+MAC Address,IP Address,IP Type,VLAN,Hostname,Description,Device Type,Last Seen
+74:4D:28:5F:80:1E,10.0.10.11,Static,10-Infra,MikroTik cAP ac Upstairs Office,MikroTik cAP ac - Upstairs Office AP,Access Point,2026-02-22
+74:4D:28:D4:7E:3F,10.0.10.12,Static,10-Infra,MikroTik cAP ac Downstairs Den,MikroTik cAP ac - Downstairs Den AP,Access Point,2026-02-22
+18:FD:74:5C:C6:8A,10.0.10.13,Static,10-Infra,(reserved),MikroTik cAP ac - Master Bedroom AP (reserved),Access Point,Waiting
+94:18:65:6E:46:C8,10.0.10.20,Static,10-Infra,GS305EP,Netgear GS305EP - Gigabit PoE Switch (Network Closet),Smart Switch,2026-02-22
+D0:11:E5:6B:16:CB,10.0.20.241,Dynamic,20-Trusted,MacMiniJonathan,Jonathan's Mac Mini,Computer,2026-02-22
+30:35:AD:AD:8E:98,10.0.20.243,Dynamic,20-Trusted,MacBook-Air-79,MacBook Air (dual VLAN - also on Guest),Computer,2026-02-22
+4A:F2:BF:77:F0:0E,10.0.20.244,Dynamic,20-Trusted,Mac,MacBook Air (Jonathan),Computer,2026-02-22
+D8:13:99:3C:6D:5B,10.0.20.245,Dynamic,20-Trusted,55TCLRokuTV,55 inch TCL Roku TV - Den,TV,2026-02-22
+3C:A6:F6:2A:50:69,10.0.20.247,Dynamic,20-Trusted,Erins-Air,Erin's MacBook Air,Computer,2026-02-22
+7A:34:0F:79:23:A4,10.0.20.248,Dynamic,20-Trusted,iPad,iPad,Phone/Tablet,2026-02-22
+06:12:8D:02:37:DE,10.0.20.249,Dynamic,20-Trusted,(unknown),Unknown Trusted Device,Unknown,2026-02-22
+22:FD:E3:21:18:81,10.0.20.250,Dynamic,20-Trusted,Pixel-6-Pro,Google Pixel 6 Pro,Phone/Tablet,2026-02-22
+90:09:D0:63:C3:5A,10.0.30.10,Static,30-Shared,synology,Synology DiskStation DS224+ NAS and Plex Server (Network Closet),NAS,2026-02-22
+DC:A6:32:AA:FE:ED,10.0.30.11,Static,30-Shared,homeassistant,Home Assistant - Home Automation Hub (Raspberry Pi 4),Server,2026-02-22
+30:05:5C:60:A0:F6,10.0.30.103,Dynamic,30-Shared,BROTHER-HL-L2360DW,Brother HL-L2360DW Laser Printer,Printer,2026-02-22
+00:18:61:5E:EB:E1,10.0.30.104,Dynamic,30-Shared,myx_0018615EEBE0,Ooma VoIP Telephone Interface (Network Closet),VoIP Phone,2026-02-22
+F4:F5:D8:75:87:F8,10.0.30.211,Static,30-Shared,Chromecast,Google Chromecast - Den,Media Device,2026-02-22
+E4:F0:42:82:F4:A2,10.0.30.217,Static,30-Shared,Chromecast,Google Chromecast,Media Device,2026-02-22
+94:3C:C6:32:CB:94,10.0.40.10,Static,40-IoT,circuitsetup-energy-mon-32cb94,ESPHome Energy Monitor #1 - CircuitSetup,Sensor,2026-02-22
+5E:0D:53:50:0A:15,10.0.40.190,Dynamic,40-IoT,(unknown),Unknown IoT Device,IoT Device,2026-02-22
+22:0B:CD:D9:E9:10,10.0.40.191,Dynamic,40-IoT,(unknown),Unknown IoT Device,IoT Device,2026-02-22
+DE:9A:F7:2B:6C:97,10.0.40.193,Dynamic,40-IoT,Pixel-6-Pro,Google Pixel 6 Pro (IoT VLAN),Phone/Tablet,2026-02-22
+1A:9E:B4:3D:57:F8,10.0.40.202,Dynamic,40-IoT,Pixel-7a,Google Pixel 7a,Phone/Tablet,2026-02-22
+D0:73:D5:12:9A:2A,10.0.40.204,Static,40-IoT,LIFX_Color_1000_129a2a_AJ,LIFX Color 1000 Smart Bulb - Garage Hanging North,Smart Bulb,2026-02-22
+D0:73:D5:12:65:B8,10.0.40.206,Static,40-IoT,LIFX Color 1000,LIFX Color 1000 Smart Bulb - Den Floor Lamp,Smart Bulb,2026-02-22
+7C:ED:C6:92:B6:E5,10.0.40.208,Dynamic,40-IoT,amazon-f1aae73a0,Alexa Echo - Den,Alexa,2026-02-22
+AC:41:6A:81:0E:E9,10.0.40.209,Dynamic,40-IoT,(unknown),Alexa Echo - Kitchen,Alexa,2026-02-22
+3C:55:76:54:87:DD,10.0.40.210,Dynamic,40-IoT,showfinder,BitTorrent/Media Computer,Computer,2026-02-22
+98:25:4A:F8:72:99,10.0.40.212,Static,40-IoT,HS200,Kasa HS200 Smart Switch - Front Door Porch Light,Smart Switch,2026-02-22
+44:6D:7F:84:A4:C9,10.0.40.213,Dynamic,40-IoT,(unknown),Alexa Echo - Upstairs Bedroom,Alexa,2026-02-22
+B0:19:21:21:9D:A6,10.0.40.214,Static,40-IoT,KP405,Kasa KP405 Dimmer Plug - Outdoor Kitchen Lights,Smart Outlet,2026-02-22
+54:AF:97:21:1C:91,10.0.40.215,Static,40-IoT,KP405,Kasa KP405 Dimmer Plug - Firepit Lights,Smart Outlet,2026-02-22
+98:25:4A:F8:88:8E,10.0.40.216,Static,40-IoT,HS200,Kasa HS200 Smart Switch - Back Door Patio Light,Smart Switch,2026-02-22
+A0:85:E3:FB:D1:64,10.0.40.218,Dynamic,40-IoT,(unknown),Unknown IoT Device,IoT Device,2026-02-22
+D0:73:D5:12:55:5A,10.0.40.219,Dynamic,40-IoT,LIFX Color 1000 BR30,LIFX Color 1000 BR30 Smart Bulb,Smart Bulb,2026-02-22
+18:B4:30:5D:03:66,10.0.40.220,Dynamic,40-IoT,(unknown),Google Nest Cam - Doorbell,Camera,2026-02-22
+74:40:BE:37:B0:3E,10.0.40.221,Dynamic,40-IoT,QCA4002,LG ThinQ Clothes Dryer (COLLECTIVE-IOT),Appliance,2026-02-22
+00:51:ED:79:DA:50,(unknown),Dynamic,40-IoT,QCA4002,LG ThinQ Clothes Washer (COLLECTIVE-IOT),Appliance,Offline
+68:B6:91:01:FC:4C,10.0.40.222,Dynamic,40-IoT,(unknown),Alexa Echo - Upstairs Bathroom,Alexa,2026-02-22
+98:F4:AB:C2:E5:87,10.0.40.223,Dynamic,40-IoT,tasmota_C2E587-1415,Tasmota Device,Smart Outlet,2026-02-22
+A4:CF:12:CC:13:77,10.0.40.224,Dynamic,40-IoT,tasmota_CC1377-4983,Tasmota Device,Smart Outlet,2026-02-22
+B4:B0:24:EA:A4:74,10.0.40.225,Static,40-IoT,EP10,Kasa EP10 Smart Plug - Ham Radio,Smart Outlet,2026-02-22
+A4:CF:12:CC:20:A9,10.0.40.226,Dynamic,40-IoT,tasmota_CC20A9-0169,Tasmota Device,Smart Outlet,2026-02-22
+D0:73:D5:12:B0:AA,10.0.40.227,Static,40-IoT,LIFX_Color_1000_BR30_12b0aa_AJ,LIFX Color 1000 BR30 Smart Bulb - Garage Spot North,Smart Bulb,2026-02-22
+B4:B0:24:80:66:73,10.0.40.228,Static,40-IoT,EP40,Kasa EP40 Smart Outlet - Outdoor Outlet 1,Smart Outlet,2026-02-22
+D0:73:D5:12:1D:E1,10.0.40.229,Static,40-IoT,LIFX Color 1000 BR30,LIFX Color 1000 BR30 Smart Bulb - Garage Attic,Smart Bulb,2026-02-22
+54:AF:97:84:42:91,10.0.40.230,Static,40-IoT,EP10,Kasa EP10 Smart Plug - Garage Fan 1,Smart Outlet,2026-02-22
+B4:B0:24:EA:A4:85,10.0.40.231,Static,40-IoT,EP10,Kasa EP10 Smart Plug - Garage Stereo,Smart Outlet,2026-02-22
+54:AF:97:84:59:CC,10.0.40.232,Static,40-IoT,EP10,Kasa EP10 Smart Plug - Garage Fan 2,Smart Outlet,2026-02-22
+BC:DD:C2:15:58:54,10.0.40.233,Dynamic,40-IoT,tasmota_155854-6228,Tasmota Device,Smart Outlet,2026-02-22
+D0:73:D5:12:74:F0,10.0.40.234,Static,40-IoT,LIFX Color 1000,LIFX Color 1000 Smart Bulb - Garage Hanging South,Smart Bulb,2026-02-22
+18:B4:30:5D:76:BF,10.0.40.235,Dynamic,40-IoT,(unknown),Google Nest Cam - Backyard,Camera,2026-02-22
+D0:73:D5:12:78:30,10.0.40.236,Static,40-IoT,LIFX Color 1000,LIFX Color 1000 Smart Bulb - Office Table Lamp,Smart Bulb,2026-02-22
+00:4B:12:4A:7F:28,10.0.40.237,Static,40-IoT,wled-WLED,WLED LED Controller,Smart Bulb,2026-02-22
+B4:B0:24:EA:A4:98,10.0.40.238,Static,40-IoT,EP10,Kasa EP10 Smart Plug - Laser Lamp,Smart Outlet,2026-02-22
+48:B4:23:F3:67:0C,10.0.40.240,Dynamic,40-IoT,(unknown),Alexa Echo - Downstairs Bedroom,Alexa,2026-02-22
+E8:D8:7E:0A:5F:FB,10.0.40.241,Dynamic,40-IoT,(unknown),Alexa Echo - Garage,Alexa,2026-02-22
+B8:5F:98:7B:72:DA,10.0.40.243,Dynamic,40-IoT,(unknown),Unknown IoT Device,IoT Device,2026-02-22
+B0:73:9C:94:A4:8B,10.0.40.244,Dynamic,40-IoT,(unknown),Alexa Echo - Living Room,Alexa,2026-02-22
+78:8C:B5:A4:2A:42,10.0.40.245,Static,40-IoT,EP10,Kasa EP10 Smart Plug - TV,Smart Outlet,2026-02-22
+54:AF:97:84:3E:1B,10.0.40.246,Static,40-IoT,EP10,Kasa EP10 Smart Plug - Garage Party Lights,Smart Outlet,2026-02-22
+5C:62:8B:A9:74:8C,10.0.40.247,Static,40-IoT,HS300,Kasa HS300 Smart Plug Strip - Garage Attic (Lights 1-4 Fans 3-4),Smart Outlet,2026-02-22
+5C:62:8B:AA:1C:B6,10.0.40.248,Static,40-IoT,EP40,Kasa EP40 Smart Outlet - Outdoor Outlet 2,Smart Outlet,2026-02-22
+78:8C:B5:A4:07:EE,10.0.40.249,Static,40-IoT,EP10,Kasa EP10 Smart Plug - Porch Speakers,Smart Outlet,2026-02-22
+82:7F:6B:1C:CA:1E,10.0.50.247,Dynamic,50-Guest,Mac,Unknown Mac,Computer,2026-02-22
+30:35:AD:AD:8E:98,10.0.50.248,Dynamic,50-Guest,MacBook-Air-79,MacBook Air (dual VLAN - also on Trusted),Computer,2026-02-22
+FA:A0:FF:50:25:4C,10.0.50.246,Dynamic,50-Guest,Matty-s-A16,Matty's Phone,Phone/Tablet,2026-02-22
+C4:8B:66:88:D6:D6,(unknown),Dynamic,40-IoT,MasterBedroom40TCLRokuTV,Master Bedroom 40 inch TCL Roku TV,TV,Offline
+78:8C:B5:A4:37:42,(unknown),Dynamic,40-IoT,EP10,Kasa EP10 Smart Plug - Christmas Lights,Smart Outlet,Offline
+D0:73:D5:12:A0:D3,(unknown),Dynamic,40-IoT,LIFX Color 1000,LIFX Color 1000 Smart Bulb,Smart Bulb,Offline
+78:42:1C:6A:65:F4,(unknown),Dynamic,40-IoT,wled-WLED,WLED LED Controller (Secondary),Smart Bulb,Offline
+18:B4:30:5C:FF:C1,(unknown),Dynamic,40-IoT,(unknown),Google Nest Cam - Driveway,Camera,Offline
+64:16:66:6F:07:83,(unknown),Dynamic,40-IoT,Nest-Hello-0783,Google Nest Hello Doorbell,Camera,Offline
+EC:71:DB:B3:E6:0F,(unknown),Dynamic,40-IoT,SC-01-5,Reolink RLC-820A Security Camera,Camera,Offline
+24:A1:60:2F:47:CD,(unknown),Dynamic,40-IoT,Flume-GW-47CD,Flume Water Flow Monitor,Sensor,Offline

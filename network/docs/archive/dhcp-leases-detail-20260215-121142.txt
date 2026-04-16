@@ -1,0 +1,415 @@
+Flags: X - disabled, R - radius, D - dynamic, B - blocked 
+ 0   ;;; LAYER 2/3 NETWORK DEVICES /// Switch (POE) - Netgear GS305EP - Gigabit P
+OE Switch for POE WAPs (Network Closet)
+     address=10.0.0.101 mac-address=94:18:65:6E:46:C8 
+     client-id="1:94:18:65:6e:46:c8" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=5m55s last-seen=4m5s 
+     active-address=10.0.0.101 active-mac-address=94:18:65:6E:46:C8 
+     active-client-id="1:94:18:65:6e:46:c8" active-server=defconf 
+     host-name="GS305EP" 
+
+ 1   address=10.0.2.2 mac-address=D0:11:E5:6B:16:CB 
+     client-id="1:d0:11:e5:6b:16:cb" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=8m17s last-seen=1m43s 
+     active-address=10.0.2.2 active-mac-address=D0:11:E5:6B:16:CB 
+     active-client-id="1:d0:11:e5:6b:16:cb" active-server=defconf 
+     host-name="MacMiniJonathan" 
+
+ 2   ;;; NAS - Synology DiskStation DS224+ - 2-Bay NAS and Plex Server (Network C
+loset)
+     address=10.0.0.102 mac-address=90:09:D0:63:C3:5A 
+     client-id="1:90:9:d0:63:c3:5a" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=6m18s last-seen=3m42s 
+     active-address=10.0.0.102 active-mac-address=90:09:D0:63:C3:5A 
+     active-client-id="1:90:9:d0:63:c3:5a" active-server=defconf 
+     host-name="synology" 
+
+ 3   address=10.0.8.50 mac-address=BC:DD:C2:15:58:54 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m48s 
+     last-seen=4m12s active-address=10.0.8.50 
+     active-mac-address=BC:DD:C2:15:58:54 active-server=defconf 
+     host-name="tasmota_155854-6228" 
+
+ 4   ;;; Alexa Echo Garage
+     address=10.0.7.4 mac-address=E8:D8:7E:0A:5F:FB address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m52s 
+     last-seen=3m8s active-address=10.0.7.4 
+     active-mac-address=E8:D8:7E:0A:5F:FB active-server=defconf 
+
+ 5   ;;; Kasa EP10 Smart Plug - Garage Fan 1
+     address=10.0.8.104 mac-address=54:AF:97:84:42:91 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m6s 
+     last-seen=3m54s active-address=10.0.8.104 
+     active-mac-address=54:AF:97:84:42:91 active-server=defconf 
+     host-name="EP10" 
+
+ 6   ;;; Kasa EP10 Smart Plug - Garage Stereo
+     address=10.0.8.102 mac-address=B4:B0:24:EA:A4:85 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m27s 
+     last-seen=3m33s active-address=10.0.8.102 
+     active-mac-address=B4:B0:24:EA:A4:85 active-server=defconf 
+     host-name="EP10" 
+
+ 7   ;;; Kasa EP10 Smart Plug - Garage Party Lights
+     address=10.0.8.101 mac-address=54:AF:97:84:3E:1B address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=9m12s 
+     last-seen=48s active-address=10.0.8.101 
+     active-mac-address=54:AF:97:84:3E:1B active-server=defconf 
+     host-name="EP10" 
+
+ 8   ;;; Kasa EP10 Smart Plug - Garage Fan 2
+     address=10.0.8.105 mac-address=54:AF:97:84:59:CC address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m4s 
+     last-seen=3m56s active-address=10.0.8.105 
+     active-mac-address=54:AF:97:84:59:CC active-server=defconf 
+     host-name="EP10" 
+
+ 9   ;;; Kasa EP10 Smart Plug - Ham Radio
+     address=10.0.8.103 mac-address=B4:B0:24:EA:A4:74 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=9m31s 
+     last-seen=29s active-address=10.0.8.103 
+     active-mac-address=B4:B0:24:EA:A4:74 active-server=defconf 
+     host-name="EP10" 
+
+10   address=10.0.8.6 mac-address=78:8C:B5:A4:2A:42 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m23s 
+     last-seen=3m37s active-address=10.0.8.6 
+     active-mac-address=78:8C:B5:A4:2A:42 active-server=defconf 
+     host-name="EP10" 
+
+11   ;;; IOT (SMART SPEAKERS/MEDIA) /// Google Chromecast Den
+     address=10.0.7.1 mac-address=F4:F5:D8:75:87:F8 address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=45s 
+     host-name="Chromecast" 
+
+12   ;;; Alexa Echo Downstairs Bedroom
+     address=10.0.7.7 mac-address=48:B4:23:F3:67:0C address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=9m57s 
+     last-seen=3s active-address=10.0.7.7 
+     active-mac-address=48:B4:23:F3:67:0C active-server=defconf 
+
+13   ;;; Alexa Echo Living Room
+     address=10.0.7.8 mac-address=B0:73:9C:94:A4:8B address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m28s 
+     last-seen=3m32s active-address=10.0.7.8 
+     active-mac-address=B0:73:9C:94:A4:8B active-server=defconf 
+
+14   ;;; Alexa Echo Kitchen
+     address=10.0.7.2 mac-address=AC:41:6A:81:0E:E9 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m3s 
+     last-seen=4m57s active-address=10.0.7.2 
+     active-mac-address=AC:41:6A:81:0E:E9 active-server=defconf 
+
+15   ;;; Alexa Echo Den
+     address=10.0.7.3 mac-address=7C:ED:C6:92:B6:E5 
+     client-id="1:7c:ed:c6:92:b6:e5" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=6m4s last-seen=3m56s 
+     active-address=10.0.7.3 active-mac-address=7C:ED:C6:92:B6:E5 
+     active-client-id="1:7c:ed:c6:92:b6:e5" active-server=defconf 
+     host-name="amazon-f1aae73a0" 
+
+16   address=10.0.4.3 mac-address=D8:13:99:3C:6D:5B address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=26m36s 
+     host-name="55TCLRokuTV" 
+
+17   ;;; IT PERIPHERALS ///
+     address=10.0.4.1 mac-address=30:05:5C:60:A0:F6 
+     client-id="1:30:5:5c:60:a0:f6" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=6m39s last-seen=3m21s 
+     active-address=10.0.4.1 active-mac-address=30:05:5C:60:A0:F6 
+     active-client-id="1:30:5:5c:60:a0:f6" active-server=defconf 
+     host-name="BROTHER-HL-L2360DW" 
+
+18   address=10.0.4.4 mac-address=F8:4F:AD:C9:69:43 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=8m28s 
+     last-seen=1m32s active-address=10.0.4.4 
+     active-mac-address=F8:4F:AD:C9:69:43 active-server=defconf 
+     host-name="GuestBedroom-43TCLRokuTV" 
+
+19   ;;; Alexa Echo Upstairs Bedroom
+     address=10.0.7.5 mac-address=44:6D:7F:84:A4:C9 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=7m15s 
+     last-seen=2m45s active-address=10.0.7.5 
+     active-mac-address=44:6D:7F:84:A4:C9 active-server=defconf 
+
+20   ;;; Alexa Echo Upstairs Bathroom
+     address=10.0.7.6 mac-address=68:B6:91:01:FC:4C address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=7m17s 
+     last-seen=2m43s active-address=10.0.7.6 
+     active-mac-address=68:B6:91:01:FC:4C active-server=defconf 
+
+21   ;;; Kasa EP10 Smart Plug - Laser Lamp
+     address=10.0.8.100 mac-address=B4:B0:24:EA:A4:98 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m37s 
+     last-seen=4m23s active-address=10.0.8.100 
+     active-mac-address=B4:B0:24:EA:A4:98 active-server=defconf 
+     host-name="EP10" 
+
+22   address=10.0.9.4 mac-address=D0:73:D5:12:78:30 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m6s 
+     last-seen=4m54s active-address=10.0.9.4 
+     active-mac-address=D0:73:D5:12:78:30 active-server=defconf 
+     host-name="LIFX Color 1000" 
+
+23   address=10.0.8.51 mac-address=A4:CF:12:CC:13:77 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m11s 
+     last-seen=3m49s active-address=10.0.8.51 
+     active-mac-address=A4:CF:12:CC:13:77 active-server=defconf 
+     host-name="tasmota_CC1377-4983" 
+
+24   address=10.0.2.4 mac-address=DC:A6:32:AA:FE:ED 
+     client-id="1:dc:a6:32:aa:fe:ed" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=6m29s last-seen=3m31s 
+     active-address=10.0.2.4 active-mac-address=DC:A6:32:AA:FE:ED 
+     active-client-id="1:dc:a6:32:aa:fe:ed" active-server=defconf 
+     host-name="homeassistant" 
+
+25   address=10.0.2.65 mac-address=3C:55:76:54:87:DD 
+     client-id="1:3c:55:76:54:87:dd" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=8m41s last-seen=1m19s 
+     active-address=10.0.2.65 active-mac-address=3C:55:76:54:87:DD 
+     active-client-id="1:3c:55:76:54:87:dd" active-server=defconf 
+     host-name="showfinder" 
+
+26   address=10.0.8.52 mac-address=A4:CF:12:CC:20:A9 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m35s 
+     last-seen=4m25s active-address=10.0.8.52 
+     active-mac-address=A4:CF:12:CC:20:A9 active-server=defconf 
+     host-name="tasmota_CC20A9-0169" 
+
+27   address=10.0.9.5 mac-address=D0:73:D5:12:65:B8 address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=17h16m10s 
+     host-name="LIFX Color 1000" 
+
+28   ;;; USER DEVICES (COMPUTERS, PHONES, TABLETS) ///
+     address=10.0.2.1 mac-address=D2:F3:44:00:89:96 
+     client-id="1:d2:f3:44:0:89:96" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=8m4s last-seen=1m56s 
+     active-address=10.0.2.1 active-mac-address=D2:F3:44:00:89:96 
+     active-client-id="1:d2:f3:44:0:89:96" active-server=defconf 
+     host-name="Mac" 
+
+29   ;;; IOT (LIGHTBULBS) ///
+     address=10.0.9.1 mac-address=78:42:1C:6A:65:F4 address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=14w2d9h29m52s 
+     host-name="wled-WLED" 
+
+30   address=10.0.9.2 mac-address=D0:73:D5:12:68:F4 address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=9w19h34m1s 
+     host-name="LIFX Color 1000 BR30" 
+
+31   address=10.0.2.129 mac-address=1E:54:D5:2E:FA:A8 
+     client-id="1:1e:54:d5:2e:fa:a8" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=5m30s last-seen=4m30s 
+     active-address=10.0.2.129 active-mac-address=1E:54:D5:2E:FA:A8 
+     active-client-id="1:1e:54:d5:2e:fa:a8" active-server=defconf 
+     host-name="Pixel-6-Pro" 
+
+32   address=10.0.2.6 mac-address=3C:A6:F6:2A:50:69 
+     client-id="1:3c:a6:f6:2a:50:69" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=9m21s last-seen=39s 
+     active-address=10.0.2.6 active-mac-address=3C:A6:F6:2A:50:69 
+     active-client-id="1:3c:a6:f6:2a:50:69" active-server=defconf 
+     host-name="Erins-Air" 
+
+33   address=10.0.2.130 mac-address=1A:9E:B4:3D:57:F8 
+     client-id="1:1a:9e:b4:3d:57:f8" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=5m52s last-seen=4m8s 
+     active-address=10.0.2.130 active-mac-address=1A:9E:B4:3D:57:F8 
+     active-client-id="1:1a:9e:b4:3d:57:f8" active-server=defconf 
+     host-name="Pixel-7a" 
+
+34   ;;; Google Nest Cam Driveway
+     address=10.0.6.4 mac-address=18:B4:30:5C:FF:C1 
+     client-id="1:18:b4:30:5c:ff:c1" address-lists="" server=defconf 
+     dhcp-option="" status=waiting last-seen=8w5d18h40m44s 
+
+35   ;;; Google Nest Cam Backyard
+     address=10.0.6.3 mac-address=18:B4:30:5D:76:BF 
+     client-id="1:18:b4:30:5d:76:bf" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=6m21s last-seen=3m39s 
+     active-address=10.0.6.3 active-mac-address=18:B4:30:5D:76:BF 
+     active-client-id="1:18:b4:30:5d:76:bf" active-server=defconf 
+
+36   ;;; Google Nest Cam Doorbell
+     address=10.0.6.2 mac-address=18:B4:30:5D:03:66 
+     client-id="1:18:b4:30:5d:3:66" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=9m39s last-seen=21s 
+     active-address=10.0.6.2 active-mac-address=18:B4:30:5D:03:66 
+     active-client-id="1:18:b4:30:5d:3:66" active-server=defconf 
+
+37   ;;; Kasa HS300 Smart Plug (Strip) - Garage Attic (Lights 1-4, Fans 3-4)
+     address=10.0.8.12 mac-address=5C:62:8B:A9:74:8C address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=9m13s 
+     last-seen=47s active-address=10.0.8.12 
+     active-mac-address=5C:62:8B:A9:74:8C active-server=defconf 
+     host-name="HS300" 
+
+38   ;;; IOT /// NodeMCU ESP32 for CircuitSetup energy monitor
+     address=10.0.6.1 mac-address=94:3C:C6:32:CB:94 
+     client-id="1:94:3c:c6:32:cb:94" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=6m18s last-seen=3m42s 
+     active-address=10.0.6.1 active-mac-address=94:3C:C6:32:CB:94 
+     active-client-id="1:94:3c:c6:32:cb:94" active-server=defconf 
+     host-name="circuitsetup-energy-mon-32cb94" 
+
+39   ;;; Dimmer Plug - Outdoor Kitchen Lights
+     address=10.0.8.11 mac-address=B0:19:21:21:9D:A6 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m26s 
+     last-seen=3m34s active-address=10.0.8.11 
+     active-mac-address=B0:19:21:21:9D:A6 active-server=defconf 
+     host-name="KP405" 
+
+40   ;;; IOT - POWER DEVICES (SMART PLUGS / SWITCHES) /// Kasa HS200 Smart Switch
+ - Front Door Porch Light
+     address=10.0.8.1 mac-address=98:25:4A:F8:72:99 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m39s 
+     last-seen=4m21s active-address=10.0.8.1 
+     active-mac-address=98:25:4A:F8:72:99 active-server=defconf 
+     host-name="HS200" 
+
+41   ;;; Kasa EP40 Smart Outlet - Outdoor Outlet 2-x
+     address=10.0.8.41 mac-address=5C:62:8B:AA:1C:B6 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m13s 
+     last-seen=3m47s active-address=10.0.8.41 
+     active-mac-address=5C:62:8B:AA:1C:B6 active-server=defconf 
+     host-name="EP40" 
+
+42   address=10.0.9.8 mac-address=D0:73:D5:12:1D:E1 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=9m7s 
+     last-seen=53s active-address=10.0.9.8 
+     active-mac-address=D0:73:D5:12:1D:E1 active-server=defconf 
+     host-name="LIFX_Color_1000_BR30_121de1_AJ" 
+
+43   address=10.0.7.50 mac-address=E4:F0:42:82:F4:A2 address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=10h6m4s 
+     host-name="Chromecast" 
+
+44   ;;; Oooma VoIP Telephone Interface (Network Closet)
+     address=10.0.0.103 mac-address=00:18:61:5E:EB:E1 
+     client-id="1:0:18:61:5e:eb:e1" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=5m27s last-seen=4m33s 
+     active-address=10.0.0.103 active-mac-address=00:18:61:5E:EB:E1 
+     active-client-id="1:0:18:61:5e:eb:e1" active-server=defconf 
+     host-name="myx_0018615EEBE0" 
+
+45   ;;; Kasa EP40 Smart Outlet - Outdoor Outlet 1-x
+     address=10.0.8.40 mac-address=B4:B0:24:80:66:73 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=9m15s 
+     last-seen=45s active-address=10.0.8.40 
+     active-mac-address=B4:B0:24:80:66:73 active-server=defconf 
+     host-name="EP40" 
+
+46   address=10.0.9.9 mac-address=D0:73:D5:12:74:F0 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m28s 
+     last-seen=4m32s active-address=10.0.9.9 
+     active-mac-address=D0:73:D5:12:74:F0 active-server=defconf 
+     host-name="LIFX Color 1000" 
+
+47   address=10.0.9.11 mac-address=D0:73:D5:12:A0:D3 address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=2w5d23h6m57s 
+     host-name="LIFX Color 1000" 
+
+48   address=10.0.9.10 mac-address=D0:73:D5:12:9A:2A address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=1w4d19h12m5s 
+     host-name="LIFX Color 1000" 
+
+49   address=10.0.9.6 mac-address=D0:73:D5:12:55:5A address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=4m50s 
+     last-seen=5m10s active-address=10.0.9.6 
+     active-mac-address=D0:73:D5:12:55:5A active-server=defconf 
+     host-name="LIFX_Color_1000_BR30_12555a_AJ" 
+
+50   address=10.0.9.7 mac-address=D0:73:D5:12:B0:AA address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=4m30s 
+     last-seen=5m30s active-address=10.0.9.7 
+     active-mac-address=D0:73:D5:12:B0:AA active-server=defconf 
+     host-name="LIFX_Color_1000_BR30_12b0aa_AJ" 
+
+51   address=10.0.2.131 mac-address=92:AE:BE:65:05:CF 
+     client-id="1:92:ae:be:65:5:cf" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=5m25s last-seen=4m35s 
+     active-address=10.0.2.131 active-mac-address=92:AE:BE:65:05:CF 
+     active-client-id="1:92:ae:be:65:5:cf" active-server=defconf 
+     host-name="iPad" 
+
+52   ;;; Kasa EP10 Smart Plug - Christmas Lights
+     address=10.0.8.14 mac-address=78:8C:B5:A4:37:42 address-lists="" 
+     server=defconf dhcp-option="" status=waiting last-seen=4w2d15h9m7s 
+     host-name="EP10" 
+
+53   ;;; Google Nest Hello - Doorbell
+     address=10.0.6.5 mac-address=64:16:66:6F:07:83 
+     client-id="1:64:16:66:6f:7:83" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=9m11s last-seen=49s 
+     active-address=10.0.6.5 active-mac-address=64:16:66:6F:07:83 
+     active-client-id="1:64:16:66:6f:7:83" active-server=defconf 
+     host-name="Nest-Hello-0783" 
+
+54   ;;; Flume Water Flow Monitor
+     address=10.0.6.6 mac-address=24:A1:60:2F:47:CD 
+     client-id="1:24:a1:60:2f:47:cd" address-lists="" dhcp-option="" 
+     status=bound expires-after=6m41s last-seen=3m19s active-address=10.0.6.6 
+     active-mac-address=24:A1:60:2F:47:CD 
+     active-client-id="1:24:a1:60:2f:47:cd" active-server=defconf 
+     host-name="Flume-GW-47CD" 
+
+55 D address=10.0.255.203 mac-address=98:25:4A:F8:88:8E address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m35s 
+     last-seen=4m25s active-address=10.0.255.203 
+     active-mac-address=98:25:4A:F8:88:8E active-server=defconf 
+     host-name="HS200" 
+
+56   ;;; Surveillance Cameras /// SC-01-5 - RLC-820A
+     address=10.0.10.1 mac-address=EC:71:DB:B3:E6:0F 
+     client-id="1:ec:71:db:b3:e6:f" address-lists="" server=defconf 
+     dhcp-option="" status=waiting last-seen=1d25m58s host-name="SC-01-5" 
+
+57 D address=10.0.255.197 mac-address=78:8C:B5:A4:07:EE address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m26s 
+     last-seen=4m34s active-address=10.0.255.197 
+     active-mac-address=78:8C:B5:A4:07:EE active-server=defconf 
+     host-name="EP10" 
+
+58 D address=10.0.255.205 mac-address=00:4B:12:4A:7F:28 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m22s 
+     last-seen=3m38s active-address=10.0.255.205 
+     active-mac-address=00:4B:12:4A:7F:28 active-server=defconf 
+     host-name="wled-WLED" 
+
+59   address=10.0.8.53 mac-address=98:F4:AB:C2:E5:87 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m29s 
+     last-seen=3m31s active-address=10.0.8.53 
+     active-mac-address=98:F4:AB:C2:E5:87 active-server=defconf 
+     host-name="tasmota_C2E587-1415" 
+
+60 D address=10.0.255.196 mac-address=B8:5F:98:7B:72:DA address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=5m2s 
+     last-seen=4m58s active-address=10.0.255.196 
+     active-mac-address=B8:5F:98:7B:72:DA active-server=defconf 
+
+61 D address=10.0.255.248 mac-address=A0:85:E3:FB:D1:64 
+     client-id="1:a0:85:e3:fb:d1:64" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=9m8s last-seen=52s 
+     active-address=10.0.255.248 active-mac-address=A0:85:E3:FB:D1:64 
+     active-client-id="1:a0:85:e3:fb:d1:64" active-server=defconf 
+
+62 D address=10.0.255.212 mac-address=54:AF:97:21:1C:91 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=6m14s 
+     last-seen=3m46s active-address=10.0.255.212 
+     active-mac-address=54:AF:97:21:1C:91 active-server=defconf 
+     host-name="KP405" 
+
+63 D address=10.0.255.244 mac-address=4A:00:54:F4:08:DF 
+     client-id="1:4a:0:54:f4:8:df" address-lists="" server=defconf 
+     dhcp-option="" status=bound expires-after=1m37s last-seen=8m23s 
+     active-address=10.0.255.244 active-mac-address=4A:00:54:F4:08:DF 
+     active-client-id="1:4a:0:54:f4:8:df" active-server=defconf 
+     host-name="Mac" 
+
+64 D address=10.0.255.193 mac-address=00:51:ED:79:DA:50 address-lists="" 
+     server=defconf dhcp-option="" status=bound expires-after=7m29s 
+     last-seen=2m31s active-address=10.0.255.193 
+     active-mac-address=00:51:ED:79:DA:50 active-server=defconf 
+     host-name="QCA4002" 
+

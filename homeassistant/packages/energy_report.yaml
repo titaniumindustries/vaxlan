@@ -1,0 +1,136 @@
+# Energy report with arbitrary time window + optional utility meter comparison
+# One-time setup: place this file in your HA config under `packages/energy_report.yaml`
+# Requires: recorder (in default_config) and a cumulative energy sensor recorded in long-term stats.
+
+input_select:
+  energy_report_entity:
+    name: Energy sensor
+    options:
+      - sensor.energymeter_energymeter_mains_kwh
+    initial: sensor.energymeter_energymeter_mains_kwh
+
+input_datetime:
+  energy_report_start:
+    name: Energy report start
+    has_date: true
+    has_time: true
+  energy_report_end:
+    name: Energy report end
+    has_date: true
+    has_time: true
+
+# Optional: type in utility meter readings taken from your photos (kWh)
+input_number:
+  utility_meter_start_kwh:
+    name: Utility meter start (kWh)
+    min: 0
+    max: 999999
+    step: 0.01
+    mode: box
+  utility_meter_end_kwh:
+    name: Utility meter end (kWh)
+    min: 0
+    max: 999999
+    step: 0.01
+    mode: box
+
+command_line:
+  - sensor:
+      name: Energy report kWh
+      unique_id: energy_report_kwh
+      unit_of_measurement: "kWh"
+      device_class: energy
+      scan_interval: 86400
+      command: >-
+        {%- set energy_entity = states('input_select.energy_report_entity') %}
+        {%- set start_raw = states('input_datetime.energy_report_start') %}
+        {%- set end_raw   = states('input_datetime.energy_report_end') %}
+        {%- if start_raw in ['unknown','unavailable',''] or end_raw in ['unknown','unavailable',''] %}
+        echo 0
+        {%- else %}
+        {%- set start_ts = as_timestamp(as_datetime(start_raw)) | int %}
+        {%- set end_ts   = as_timestamp(as_datetime(end_raw))   | int %}
+        sqlite3 /config/home-assistant_v2.db
+        "SELECT ROUND(COALESCE(
+        (SELECT s.sum FROM statistics s
+        JOIN statistics_meta m ON m.id=s.metadata_id
+        WHERE m.statistic_id='{{ energy_entity }}'
+        AND s.start_ts<={{ end_ts }}
+        ORDER BY s.start_ts DESC LIMIT 1)
+        -
+        (SELECT s.sum FROM statistics s
+        JOIN statistics_meta m ON m.id=s.metadata_id
+        WHERE m.statistic_id='{{ energy_entity }}'
+        AND s.start_ts<={{ start_ts }}
+        ORDER BY s.start_ts DESC LIMIT 1)
+        ,0),3)"
+        {%- endif %}
+      command_timeout: 10
+
+template:
+  - sensor:
+      - name: Utility meter delta (kWh)
+        unique_id: utility_meter_delta_kwh
+        device_class: energy
+        unit_of_measurement: "kWh"
+        state_class: measurement
+        state: >-
+          {% set start = states('input_number.utility_meter_start_kwh') | float(0) %}
+          {% set end   = states('input_number.utility_meter_end_kwh')   | float(0) %}
+          {{ max(end - start, 0) | round(3) }}
+
+      - name: Energy report diff (HA - Utility) kWh
+        unique_id: energy_report_diff_kwh
+        unit_of_measurement: "kWh"
+        state_class: measurement
+        state: >-
+          {% set ha  = states('sensor.energy_report_kwh') | float(0) %}
+          {% set utl = states('sensor.utility_meter_delta_kwh') | float(0) %}
+          {{ (ha - utl) | round(3) }}
+
+      - name: Energy report percent error
+        unique_id: energy_report_percent_error
+        unit_of_measurement: "%"
+        state: >-
+          {% set ha  = states('sensor.energy_report_kwh') | float(0) %}
+          {% set utl = states('sensor.utility_meter_delta_kwh') | float(0) %}
+          {% if utl > 0 %}
+            {{ ((ha - utl) / utl * 100) | round(2) }}
+          {% else %}
+            unknown
+          {% endif %}
+
+automation:
+  - alias: Populate energy report sensor dropdown
+    mode: single
+    trigger:
+      - platform: homeassistant
+        event: start
+    action:
+      - delay: "00:00:30"
+      - service: input_select.set_options
+        target:
+          entity_id: input_select.energy_report_entity
+        data:
+          options: >-
+            {% set ns = namespace(sensors=[]) %}
+            {% for s in states.sensor %}
+              {% if s.attributes.get('device_class') == 'energy'
+                 and s.attributes.get('state_class') in ['total', 'total_increasing'] %}
+                {% set ns.sensors = ns.sensors + [s.entity_id] %}
+              {% endif %}
+            {% endfor %}
+            {{ ns.sensors if ns.sensors | count > 0 else ['sensor.energymeter_energymeter_mains_kwh'] }}
+
+  - alias: Recompute energy report on input changes
+    mode: restart
+    trigger:
+      - platform: state
+        entity_id:
+          - input_datetime.energy_report_start
+          - input_datetime.energy_report_end
+          - input_select.energy_report_entity
+    action:
+      - service: homeassistant.update_entity
+        target:
+          entity_id: sensor.energy_report_kwh

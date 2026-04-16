@@ -1,0 +1,31 @@
+# Living Room Table Lamp — Sunset Warm White Fade
+# Added: 2026-04-16
+#
+# 45 minutes before sunset, fades the living room table lamp to warm white
+# (2700 K) over 10 minutes. Only fires if the lamp is already on — does not
+# turn on a lamp that is off.
+#
+# Entities:
+#   light.living_room_table_lamp — LIFX Color 1000 (10.0.40.15, VLAN 40)
+
+- id: 'living_room_lamp_sunset_fade'
+  alias: Living Room Lamp - Sunset Warm White Fade
+  description: >-
+    Fade the living room table lamp to warm white (2700 K) over 10 minutes,
+    starting 45 minutes before sunset.
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: '-00:45:00'
+  conditions:
+  - condition: state
+    entity_id: light.living_room_table_lamp
+    state: 'on'
+  actions:
+  - action: light.turn_on
+    target:
+      entity_id: light.living_room_table_lamp
+    data:
+      color_temp_kelvin: 2700
+      transition: 600
+  mode: single

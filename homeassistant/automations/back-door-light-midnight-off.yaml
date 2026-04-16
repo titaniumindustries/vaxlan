@@ -1,0 +1,20 @@
+# Back Door Light — Off at Midnight
+# Added: 2026-04-14
+#
+# Turns off the back door light at midnight every night.
+#
+# Entities:
+#   switch.back_door — Back door light switch
+
+- id: 'back_door_light_midnight_off'
+  alias: Back Door Light - Off at Midnight
+  description: Turn off the back door light at midnight every night
+  triggers:
+  - trigger: time
+    at: '00:00:00'
+  conditions: []
+  actions:
+  - action: switch.turn_off
+    target:
+      entity_id: switch.back_door
+  mode: single

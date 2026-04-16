@@ -1,0 +1,36 @@
+# Monitoring logs (generated, can be large)
+network/mikrotik/scripts/logs/
+
+# SSH keys (synced via Synology Drive, never committed)
+.ssh-keys/
+
+# macOS
+.DS_Store
+
+# Home Assistant backups — contain secrets.yaml, auth stores, tarballs
+homeassistant/backups/
+homeassistant/temp/
+**/ha-backup/
+**/secrets.yaml
+
+# Binary router backups — keep human-readable .rsc text exports only
+network/mikrotik/backups/*.backup
+
+# Synology Hyper Backup containers
+**/*.hbk/
+
+# Operational S3 cleanup audit logs (large JSON dumps, not config)
+synology/backup/logs/s3-cleanup-*/
+
+# AWS credentials / access keys
+**/credentials
+**/access-keys.csv
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Google Docs/Sheets shortcut files (not meaningful content)
+*.gsheet
+*.gdoc
+*.gslides

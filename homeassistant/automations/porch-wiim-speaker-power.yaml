@@ -1,0 +1,40 @@
+# Porch WiiM → Porch Speakers Auto-Power
+# Added: 2026-03-19
+#
+# When the WiiM Mini starts playing, turn on the Kasa smart plug
+# powering the porch speaker amplifier. When it stops playing for
+# 10 minutes, turn the plug off.
+#
+# Entities:
+#   media_player.porch_wiim    — WiiM Mini (LinkPlay, 10.0.40.70, VLAN 40)
+#   switch.porch_speakers      — Kasa EP10 smart plug (10.0.40.31, VLAN 40)
+
+- id: 'wiim_porch_auto_on'
+  alias: Porch WiiM - Playing Turns On Speakers
+  description: Turn on porch speaker amp when WiiM starts playing
+  triggers:
+  - entity_id: media_player.porch_wiim
+    trigger: state
+    to: playing
+  conditions: []
+  actions:
+  - action: switch.turn_on
+    target:
+      entity_id: switch.porch_speakers
+  mode: single
+
+- id: 'wiim_porch_auto_off'
+  alias: Porch WiiM - Idle 10min Turns Off Speakers
+  description: Turn off porch speaker amp after WiiM has not been playing for 10
+    continuous minutes. Trigger auto-cancels if WiiM resumes playing.
+  triggers:
+  - entity_id: media_player.porch_wiim
+    trigger: state
+    from: playing
+    for: '00:10:00'
+  conditions: []
+  actions:
+  - action: switch.turn_off
+    target:
+      entity_id: switch.porch_speakers
+  mode: single

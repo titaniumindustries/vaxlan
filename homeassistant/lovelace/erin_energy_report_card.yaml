@@ -1,0 +1,42 @@
+type: vertical-stack
+cards:
+  - type: entities
+    title: ⚡ Energy Report
+    entities:
+      - entity: input_select.energy_report_entity
+        name: Energy sensor
+      - input_datetime.energy_report_start
+      - input_datetime.energy_report_end
+      - type: divider
+      - entity: sensor.energy_report_kwh
+        name: HA measured (kWh)
+  - type: entities
+    title: 📊 Utility Meter Comparison
+    show_header_toggle: false
+    entities:
+      - input_number.utility_meter_start_kwh
+      - input_number.utility_meter_end_kwh
+      - type: divider
+      - entity: sensor.utility_meter_delta_kwh
+        name: Utility delta (kWh)
+      - entity: sensor.energy_report_diff_kwh
+        name: Diff (HA − Utility)
+      - entity: sensor.energy_report_percent_error
+        name: Percent error
+  - type: markdown
+    title: Sensor Reference
+    content: >-
+      {% set ns = namespace(sensors=[]) %}
+      {% for s in states.sensor %}
+        {% if s.attributes.get('device_class') == 'energy'
+           and s.attributes.get('state_class') in ['total', 'total_increasing'] %}
+          {% set ns.sensors = ns.sensors + [s] %}
+        {% endif %}
+      {% endfor %}
+      {% if ns.sensors | count == 0 %}
+      No cumulative energy sensors found.
+      {% else %}
+      {% for s in ns.sensors %}
+      **{{ s.name }}** — {{ s.attributes.unit_of_measurement }}, {{ s.attributes.state_class }}
+      {% endfor %}
+      {% endif %}

@@ -1,0 +1,27 @@
+{
+  "Rules": [
+    {
+      "ID": "MoveToGlacierQuickly",
+      "Status": "Enabled",
+      "Filter": {},
+      "Transitions": [
+        {
+          "Days": 1,
+          "StorageClass": "GLACIER_IR"
+        },
+        {
+          "Days": 91,
+          "StorageClass": "DEEP_ARCHIVE"
+        }
+      ]
+    },
+    {
+      "ID": "AbortIncompleteMultipartUploads",
+      "Filter": {},
+      "Status": "Enabled",
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 7
+      }
+    }
+  ]
+}
